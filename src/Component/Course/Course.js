@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import Topic from '../Topic/Topic';
 import './Course.css';
 
 const Course = () => {
@@ -16,8 +17,12 @@ const Course = () => {
             <h1>Online Learning Course</h1>
             <div className='course-container'>
                 <div className="subjects-container">
-                    <h3>This is course: {courses.length}</h3>
-
+                    {
+                        courses.map(course => <Topic 
+                            key={course.id}
+                            course = {course}
+                            ></Topic>)
+                    }
                 </div>
                 <div className="cart-container">
                     <h3>Selected Course</h3>
