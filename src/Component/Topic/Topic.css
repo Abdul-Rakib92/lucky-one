@@ -1,4 +1,46 @@
+.topic{
+    width: 300px;
+    height: 500px;
+    border: 2px solid purple;
+    background-color: rgb(190, 186, 186);
+    border-radius: 8px;
+    position: relative;
+
+}
+
 .topic img{
-    width: 200px;
-    height: 200px;
+    width: 280px;
+    height: 280px;
+    border-radius: 10px;
+    margin: 5px;
+}
+
+
+.topic-name{
+    font-size: 20px;
+    color: rgb(7, 1, 1);
+    line-height: 25px;
+}
+
+.btn-cart{
+    width: 100%;
+    background-color: rgb(77, 182, 214);
+    border: none;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-cart .btn-text{
+    font-size: 14px;
+    font-weight: 500;
+    margin-right: 5px;
+}
+
+.btn-cart:hover{
+    background-color: rgb(47, 56, 97);
+    color: white;
 }
