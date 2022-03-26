@@ -1,0 +1,12 @@
+
+.que-field{
+    background-color: bisque;
+}
+.que-ans{
+    text-align: start;
+    padding: 20px;
+}
+.que-ans p{
+    font-size: 18px;
+    line-height: 30px;
+}

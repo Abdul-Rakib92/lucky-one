@@ -35,12 +35,14 @@ const Course = () => {
                     }
                 </div>
                 <div className="cart-container">
-                    <h3>Selected Course</h3>
-                    <h5>Selected Item{cart.length}</h5>
-                    {cart.map((item) => (
+                    <div className='item-container'>
+                        <h3>Selected Course</h3>
+                        <h5>Selected Item{cart.length}</h5>
+                        {cart.map((item) => (
                         <p>{item.name} </p>
-                    ))}
-                    <Choose></Choose>
+                        ))}
+                        <Choose></Choose>
+                    </div>
 
                 </div>
             </div>
