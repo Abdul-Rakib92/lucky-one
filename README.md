@@ -1,8 +1,6 @@
 # Online Learning Course
 
+## live site
 
-
-## Available Scripts
-
-In the project directory, you can run:
+https://dapper-daffodil-eb31b4.netlify.app/
 
