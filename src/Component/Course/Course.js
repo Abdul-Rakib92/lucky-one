@@ -9,7 +9,12 @@ const Course = () => {
         fetch('courses.json')
         .then(res => res.json())
         .then(data => setCourses(data))
-    }, [])
+    }, []);
+
+    const handleSelectedCourse = (course) => {
+        console.log(course);
+
+    }
 
 
     return (
@@ -21,6 +26,7 @@ const Course = () => {
                         courses.map(course => <Topic 
                             key={course.id}
                             course = {course}
+                            handleSelectedCourse = {handleSelectedCourse}
                             ></Topic>)
                     }
                 </div>

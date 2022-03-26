@@ -9,3 +9,23 @@
     gap: 30px;
     margin: 80px 40px;
 }
+
+@media screen and (max-width: 1100px) {
+    .course-container{
+        grid-template-columns: 3fr 1fr;
+    }
+    .subjects-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+}
+
+@media screen and (max-width: 500px) {
+    .course-container{
+        grid-template-columns: 1fr;
+    }
+    .subjects-container{
+        grid-template-columns: 1fr;
+    }
+}
+
