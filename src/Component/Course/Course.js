@@ -4,6 +4,7 @@ import './Course.css';
 
 const Course = () => {
     const [courses, setCourses] = useState([]);
+    const [cart, setCart]= useState([]);
 
     useEffect( () => {
         fetch('courses.json')
@@ -13,6 +14,8 @@ const Course = () => {
 
     const handleSelectedCourse = (course) => {
         console.log(course);
+        const newCart = [...cart, course];
+        setCart(newCart);
 
     }
 
@@ -32,6 +35,10 @@ const Course = () => {
                 </div>
                 <div className="cart-container">
                     <h3>Selected Course</h3>
+                    <h5>Selected Item{cart.length}</h5>
+                    {cart.map((item) => (
+                        <p>{item.name} </p>
+                    ))}
 
                 </div>
             </div>

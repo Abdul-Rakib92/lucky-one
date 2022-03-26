@@ -2,8 +2,8 @@ import React from 'react';
 import './Topic.css';
 
 const Topic = (props) => {
-    const {picture, price, name} = props.course;
-    // const {handleSelectedCourse} = props;
+    const {course, handleSelectedCourse} = props;
+    const {picture, price, name} = course;
     return (
         <div className='topic'>
             <img src={picture} alt="" />
@@ -14,7 +14,7 @@ const Topic = (props) => {
             </div>
 
            
-            <button onClick={() => props.handleSelectedCourse(props.course)} className='btn-cart'>
+            <button onClick={() => handleSelectedCourse(course)} className='btn-cart'>
                 <p className='btn-text'>Add to Cart</p>
             </button>
             
