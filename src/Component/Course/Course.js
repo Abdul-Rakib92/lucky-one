@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import Choose from '../Choose/Choose';
 import Topic from '../Topic/Topic';
 import './Course.css';
 
@@ -39,6 +40,7 @@ const Course = () => {
                     {cart.map((item) => (
                         <p>{item.name} </p>
                     ))}
+                    <Choose></Choose>
 
                 </div>
             </div>

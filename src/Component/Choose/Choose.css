@@ -1,0 +1,20 @@
+.btn-one{
+    width: 50%;
+    background-color: cadetblue;
+    border: none;
+    border-radius: 10px;
+
+}
+.btn-two{
+    width: 50%;
+    background-color: rgb(95, 160, 104);
+    border: none;
+    border-radius: 10px;
+    margin-top: 7px;
+
+}
+.btn-text{
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+}
